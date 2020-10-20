@@ -1,0 +1,119 @@
+//jQuery
+https://www.w3schools.com/code/tryit.asp?filename=FWZ351JZF2PK
+
+//jquery dom traversing
+ https://www.w3schools.com/code/tryit.asp?filename=FXMXFJ7ICHYG
+https://www.w3schools.com/code/tryit.asp?filename=FXMYP9TTRVPT
+ https://www.w3schools.com/code/tryit.asp?filename=FXMYQDPKUN7K
+https://www.w3schools.com/code/tryit.asp?filename=FXMZJ8C3SBL9
+https://www.w3schools.com/code/tryit.asp?filename=FXN2B0P3XF6A
+
+ https://www.w3schools.com/code/tryit.asp?filename=FXODPPFWOB8G
+
+
+
+//JS DOM
+https://www.w3schools.com/code/tryit.asp?filename=FWZ2MLNNFF2N
+
+https://www.w3schools.com/code/tryit.asp?filename=FXB9AGP9NULT
+
+https://www.w3schools.com/code/tryit.asp?filename=FXB00SRGAMYH
+
+https://www.w3schools.com/code/tryit.asp?filename=FXB0S071SP39
+
+https://www.w3schools.com/js/js_htmldom_elements.asp
+
+accessible eleemnts as object and collection in js html  ,to see full lists scroll page down
+https://www.w3schools.com/js/js_htmldom_elements.asp
+
+https://www.w3schools.com/code/tryit.asp?filename=FXBACFES8ST0
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements
+
+https://www.w3schools.com/code/tryit.asp?filename=FXBAYPIM1JBZ
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCEHB3JLCP4
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCFCRC9HPS0
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCFJYD4NPJ0
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCGXWLSUS4D
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCHHOU0I9CN
+
+https://www.w3schools.com/code/tryit.asp?filename=FXCI2KGM8UV0
+
+//end js dom
+
+
+
+//JS STRINGS METHODS
+
+typeof usage
+https://www.w3schools.com/code/tryit.asp?filename=FXW22AWVN1ML
+
+check input is blank or not
+https://www.w3schools.com/code/tryit.asp?filename=FXW20FCBG68T
+
+split string (splited string is automatically converted into array)
+https://www.w3schools.com/code/tryit.asp?filename=FXW2PJZVKXUE
+https://www.w3schools.com/code/tryit.asp?filename=FXW31QLUPUAX
+
+slice string ()
+https://www.w3schools.com/code/tryit.asp?filename=FXW3G7PKBZBZ
+ https://www.w3schools.com/code/tryit.asp?filename=FXW48PB5D6C5
+
+//replace , substr, substring, slice in one
+ https://www.w3schools.com/code/tryit.asp?filename=FXX6GVBFRF03
+https://www.w3schools.com/code/tryit.asp?filename=FXX7IQC77QR2
+
+//uppercase only first string
+ https://www.w3schools.com/code/tryit.asp?filename=FXX80WIPRNN1
+
+//uppercase every single wordin sentence
+ https://www.w3schools.com/code/tryit.asp?filename=FXX0OEBSWZ45
+
+//swap  low to uppercase and upper to lowercase(w3resourcers reg exp usage and str replace)
+https://www.w3schools.com/code/tryit.asp?filename=FXX0YUJKK0KJ
+
+//str repeat
+ https://www.w3schools.com/code/tryit.asp?filename=FXXAI8TSHE8Z
+
+//inserting strings
+https://www.w3schools.com/code/tryit.asp?filename=FXXB3P8UX5AK
+
+//substring usage
+https://www.w3schools.com/code/tryit.asp?filename=FXXC3TWDEHUC
+
+//choping string advanced example (reg exp object) w3 resource com
+https://www.w3schools.com/code/tryit.asp?filename=FXXC91RZCBV9
+
+//zliczniae ile jest  powtrzajcych sie podciagow w ciagu znakowym
+https://www.w3schools.com/code/tryit.asp?filename=FXXDRTZ3FI3P
+
+// drukowanie slow ze zdniaa o podanej ilosci w liczbie
+  https://www.w3schools.com/code/tryit.asp?filename=FXXGEGUWMO9H
+//realna manipulacja na elementach html dom
+https://www.w3schools.com/code/tryit.asp?filename=FXXR63GUIRFB
+
+//array to string convertion
+https://www.w3schools.com/code/tryit.asp?filename=FY1VHJWQ3XEF
+/////////////////////////////////////////////////////////////////////css//////////////////////////////////////////
+css- pseudoclasses
+https://www.w3schools.com/code/tryit.asp?filename=FXMQSGXJ9VC0
+
+
+
+css- attributes selectors -specjalny tester
+ https://www.w3schools.com/code/tryit.asp?filename=FXMSQVU6Y7SR
+https://www.w3schools.com/cssref/trysel.asp
+////////////////////////////////////////
+
+
+
+js arrays zacznij od cwiczenia 38
+
+
+
+

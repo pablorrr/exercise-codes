@@ -1,0 +1,282 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<!--[if it IE9]>
+	  <script  src="/js/html5shiv.js"/></script>
+	<![endif]-->
+	  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" >
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive-->
+	  <title>Example title </title>
+	  <link href="style/style.css" rel="stylesheet"/>
+	</head>
+  <body>
+	<header>
+	  <hgroup>
+	    <h1>first subheader</h1>
+		<h1>second subheader</h1>
+	  </hgroup>
+	</header>
+	<nav class="navigation">
+		<ul>
+		  <li><a href="https://onet.pl" target="_blanket">click it go to onet.pl</a></li>
+		   <li><a href="https://wp.pl" target="_blanket">click it to go wp.pl</a></li>
+		</ul>
+	 </nav>
+	 
+	 <section>
+	 
+		<article>
+			<header>
+			 <h1>title of the first article</h1>
+			</header>
+		</article>
+		
+		<section>
+		  <p>text content of the article</p>
+		</section>
+	    <article>
+			<header>
+			 <h1>title of the first article</h1>
+			</header>
+		</article>
+		
+		<section>
+		 <p>text content of the article</p>
+		</section>
+	 
+	 </section>
+	 
+	 <section>
+	   <details>
+		<summary>lets summary somth</summary>
+		<p>content example</p>
+		<p>content example</p>
+	   </details>
+	 </section>
+	 
+	 <section>
+		<header>
+		 <hgroup>
+		  <h1>Forms section</h1>
+		 </hgroup> 
+		 </header>
+		  <form  action="first-action.php" method="post" autocomplete="on"  ><!-- also can be method=get-->
+		   <fieldset>
+		   <legend>This is legend element description</legend><br>
+		   <label>Input type text</label></br>
+		   <input type="text" name="text input" value="abc"  maxlength="25" size="100" autofocus/></br>
+		   <legend>Input type text as disabled</legend><br>
+		   <input type="text" name="text input" placeholder="disabled input example" value="1" disabled/></br>
+		   <legend>Input type text as readonly</legend><br>
+		   <input type="text" name="text input" value="1" readonly/></br>
+		   <legend>Input type text with pattern atribute(reg exp)</legend><br>
+		   <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+		   <legend>Input type text as required</legend><br>
+		   <input type="text" name="textinput" value="1" required /></br>
+		   <label>Input type radio</label></br>
+		   <input type="radio" name="input type radio" value="male"/>male</br>
+		   <input type="radio" name="input type radio" value="female" checked/>female</br>
+		   <label>Input type checkbox</label></br>
+		   <input type="checkbox" name="input type checkbox" value="bike"/>bike</br>
+		   <input type="checkbox" name="input type checkbox" value="bicycle" checked />bicycle</br>
+		   <label>Input type password</label></br>
+		   <input type="password" name="input type password"/></br>
+		   <label>Input type range</label></br>
+		   <input type="range" name="input type range" min="0" max="100" value="100"></br>
+		   <label>Input type number</label></br>
+		   <input type="number" name="input type number"  min="5" max="100"step="3" value="100"></br>
+		   <label>Input type color</label>
+		   <input type="color" name="color"></br>
+		   <label> Input type date </label></br>
+		   <label>Enter a date before 1980-01-01:</label></br>
+		   <input type="date" name="bday" max="1979-12-31"><br>
+		   <label>Enter a date after 2000-01-01: </label>
+		   <input type="date" name="bday" min="2000-01-02"><br>
+		   <label>Birthday (date and time):</label><br>
+		   <input type="datetime-local" name="bdaytime"><br>
+		   <label>E-mail:</label><br>
+		   <input type="email" name="email"><br><!-- to turn off email autocomplete paste autocomplete="off" -->
+		   <label>Select a file:</label><br> 
+		   <input type="file" name="myFile"><br>
+		   <label>Input type shops</label></br>
+		   <label>Birthday (month and year): </label><br>
+		   <input type="month" name="bdaymonth"><br>
+		   <label>Search Google: </label><br>
+		   <input type="search" name="googlesearch"><br>
+		   <label>Telephone: </label><br>
+		   <input type="tel" name="usrtel"><br>
+		   <label> Select a time: </label><br>
+           <input type="time" name="usr_time"><br>
+		   <label>Add your homepage: </label><br>
+           <input type="url" name="homepage"><br>
+		   <label>Select a week: </label><br>
+           <input type="week" name="year_week"><br>
+		   <label>input list datalist </label><br>
+		   <input list="shops" name="shop">
+		   <datalist id="shops">
+		    <optgroup label="well known">
+		     <option value="simply market">
+			 <option value="intermarche">
+			</optgroup>
+			<optgroup label="less known">	
+			 <option value="biedronka">
+			 <option value="lidl">
+			</optgroup>
+		   </datalist></br>
+		   <label>select options </label><br>
+		   <select name="example">
+		    <option name="option one name" value="one">one</option>
+			<option name="option two name" value ="two">two</option>
+			<option name="option one name" value="three">three</option>
+			<option name="option two name" value ="four" selected >four</option>
+		   </select><br>
+		   <label>textarea </label><br>
+		   <textarea>This is text to textarea</textarea>
+		   <input type="submit" name="input type submit" value="submit"/><!-- submit to default form action-->
+		   <!--different action assing to submitting!!!!!-->
+		   <input type="submit" name="input type submit" value="submit" formaction="second-action.php"/>
+		   <input type="reset" name="reset" value ="reset">
+		   <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+		   
+		   
+		   </fieldset>
+
+		  </form>
+		  <!-- bind form with select tag within id (must be same value in id tag and form tag) when select is outside from form -->
+		  <form action="/action_page.php" id="carform" novalidate ><!--Indicates that the form is not to be validated on submit: -->
+			Firstname:<input type="text" name="fname">
+			<input type="submit">
+		  </form>
+		<br>
+		<select name="carlist" form="carform" multiple><!--autoselect more than one -->
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+		</select>
+		<input type="text" name="lname" form="carform">
+		
+		<!--The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+			The formmethod attribute overrides the method attribute of the <form> element.
+
+			The formmethod attribute can be used with type="submit" and type="image"
+			https://www.w3schools.com/html/html_form_attributes.asp
+			.-->
+			
+		<form action="/action_page_binary.asp" method="post">
+		  First name: <input type="text" name="fname"><br>
+		  <input type="submit" value="Submit">
+		  <input type="submit" formenctype="multipart/form-data"
+		  value="Submit as Multipart/form-data">
+		</form>
+	 
+	 </section>
+	 
+	 <section>
+	  <header>
+		<hgroup>
+		 <h1>Table in HTML 5 Section</h1>
+		</hgroup>
+	  </header>
+	  <table>
+	    <caption><h1 style="font-weight:bold">Table with colspan</h1></caption>
+		<thead>
+	     <tr>
+		  <th contenteditable="true">first header element(editable)</th>
+		  <th>second header element</th>
+		 
+		  <th colspan="2">fourth header element</th>
+		 </tr>
+		</thead>
+		<tfoot>
+		 <tr>
+		  <td>first footer element</td>
+		  <td>second  footer element</td>
+		  <td>second  footer element</td>
+		  <td>third element</td>
+		 </tr>
+		</tfoot>
+		<tbody>
+		 <tr>
+		  <td>first element</td>
+		  <td>second element</td>
+		  <td>third element</td>
+		  <td>third element</td>
+		 </tr>
+		 <tr>
+		  <td>fourth element</td>
+		  <td>fifth element</td>
+		  <td>sixth element</td>
+		  <td>third element</td>
+		 </tr>
+		</tbody>
+		
+	  </table>
+	  
+	  <table>
+	   <caption><h1 style="font-weight:bold;">Table with rowspan</h1></caption>
+	   <tr>
+		<th>name</th>
+		<td>Johny</td>
+	   </tr>
+	   <tr>
+	    <th rowspan="2">surname</th>
+		<td>English</td>
+	   </tr>
+	   <tr>
+	    <td>Travolta</td>
+	   </tr>
+	  </table>
+	  
+	<table>
+    <caption><h1>Table with col, colgroup,and scope</h1></caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup  
+	  <div class=box-one></div>
+	  <div class=box-two></div>
+	  <div class=box-three></div>
+	  <div class=box-four></div>
+	 </section>
+	 
+	 <section>
+		<aside>
+		 <h1>aside title</h1>
+		 <ul>
+		   <li><a href="https://onet.pl" target="_blanket">click it go to onet.pl</a></li>
+		   <li><a href="https://wp.pl" target="_blanket">click it to go wp.pl</a></li>
+		 </ul>
+		 <figure>
+			<img width=60 height=60 src="gdynia.jpg" alt="gdynia picture"/>
+			<figcaption>gdynia beach picture</figcaption>
+		 </figure>
+		 </aside>
+	 </section>
+	 <section>
+	 <div id="anim"></div>
+	 </section>
+	 <footer><p class="funky">the footer content</p></footer>
+  </body>
+</html>
+
+link do praktycznego zastrosowania range
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: inline-block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+div#anim {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: green;
+  -webkit-animation-name: anim;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-itaeration-count: 3;
+  -webkit-animation-direction: alternate;
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  transform: translateX(10px) rotate(5px) translateY(10deg);
+  -ms-transform: translateX(10px) rotate(5px) translateY(10deg);
+  -webkit-transform: translateX(10px) rotate(5px) translateY(10deg); }
+
+body nav.navigation:before {
+  content: "this exercise content"; }
+
+.just-box, .box-one, .box-two, .box-three {
+  width: 62.5%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.box-one {
+  border-color: green; }
+
+.box-two {
+  border-color: red; }
+
+.box-three {
+  border-color: yellow; }
+
+a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a:active {
+    text-decoration: none; }
+  a:visited {
+    color: navy; }
+
+div {
+  background: blue;
+  padding: "20px";
+  border: 2px solid; }
+
+.horses-1:after {
+  content: "1. red"; }
+
+.horses-2:after {
+  content: "2. green"; }
+
+.horses-3:after {
+  content: "3. blue"; }
+
+.module-4 {
+  content: "4"; }
+
+.module-3 {
+  content: "3"; }
+
+.module-2 {
+  content: "2"; }
+
+.module-1 {
+  content: "1"; }
+
+.icon-success {
+  background-image: url(/images/icons/success.png); }
+
+.icon-warning {
+  background-image: url(/images/icons/warning.png); }
+
+.icon-purchase {
+  background-image: url(/images/icons/purchase.png); }
+
+/* ----------------------------------- */
+.twitter-icon {
+  color: blue; }
+  .twitter-icon:after {
+    content: ""; }
+
+.dribble-icon {
+  color: orange; }
+  .dribble-icon:after {
+    content: ""; }
+
+.github-icon {
+  color: black; }
+  .github-icon:after {
+    content: ""; }
+
+/* ----------------------------------- */
+.twitter-icon {
+  color: blue; }
+  .twitter-icon:after {
+    content: ""; }
+
+.dribble-icon {
+  color: orange; }
+  .dribble-icon:after {
+    content: ""; }
+
+.github-icon {
+  color: black; }
+  .github-icon:after {
+    content: ""; }
+
+p {
+  border: 1px solid; }
+
+p {
+  color: green; }
+
+/* Define the Sassy Map called $icons */
+/* For each key in the map, created an own class, name as name of a key, value as value which is assosciated with key  */
+.icon--checkmark {
+  content: a; }
+
+.icon--plus {
+  content: b; }
+
+.icon--minus {
+  content: c; }
+
+.sidebar {
+  width: 300px; }
+  @media screen and (orientation: landscape) {
+    .sidebar {
+      width: 500px; } }
+
+/*# sourceMappingURL=style.css.map */

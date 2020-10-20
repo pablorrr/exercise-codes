@@ -1,0 +1,196 @@
+﻿$color-green:green;
+$inline-block:inline-block;
+@import 'reset';
+
+nav{
+	ul{
+	 margin: 0;
+     padding: 0;
+     list-style: none;
+	 }
+
+	li {display:$inline-block;}
+    
+	a {
+       display: inline-block;
+       padding: 6px 12px;
+       text-decoration: none;
+	   }
+}
+
+@mixin transformation($width-height,$aniname,$ani-duration,$ani-timing,$ani-delay,$ani-count,$ani-dir,$transx,$transy,$rotate){
+
+	width:$width-height;
+	height:$width-height;
+	position:relative;
+	background-color:green;
+	
+	-webkit-animation-name: $aniname;
+	-webkit-animation-duration: $ani-duration;
+	-webkit-animation-timing-function:$ani-timing;
+	-webkit-animation-delay:$ani-delay;
+	-webkit-animation-itaeration-count:$ani-count;
+	-webkit-animation-direction:$ani-dir;
+	
+    animation-name: $aniname;
+    animation-duration: $ani-duration;
+    animation-timing-function: $ani-timing;
+    animation-delay: $ani-delay;
+    animation-iteration-count: $ani-count;
+    animation-direction: $ani-dir;
+	transform: translateX($transx) rotate($rotate) translateY($transy);
+	-ms-transform: translateX($transx) rotate($rotate) translateY($transy);
+	-webkit-transform: translateX($transx) rotate($rotate) translateY($transy);
+
+}
+
+
+div#anim{ @include transformation(100px,anim,5s,linear,2s,3,alternate,10px,10deg,5px);}
+
+@mixin exercise-example ($selector){
+	
+	body nav#{$selector}:before{content:"this exercise content";}
+}
+
+@include exercise-example(".navigation");
+
+
+%common-contain{
+  width: 600px / 960px * 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.just-box{@extend %common-contain;}
+
+.box-one {
+  @extend %common-contain; 
+  border-color: green;
+}
+
+.box-two{
+  @extend %common-contain;
+  border-color: red;
+}
+
+.box-three {
+  @extend %common-contain;
+  border-color: yellow;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none; 
+&:hover {text-decoration: underline; }
+&:active {text-decoration:none;}
+&:visited {color:navy;}
+}
+
+//first kind of list
+$colours: red green blue;
+$padding: '10px', '20px', '30px';
+$border: "solid" "dotted";
+
+// nth takes the list name as 1st param
+// and list item as the 2nd
+div {
+  background: nth($colours, 3);
+  padding: nth($padding, 2); // "20px"
+  border: 2px unquote(nth($border, 1));
+}
+	  
+//for	  
+@for $i from 1 through length($colours) {
+  .horses-#{$i} {
+    &:after {
+      content: "#{$i}. #{nth($colours, $i)}";
+    }
+  }
+}	
+
+$num: 4;
+
+@while $num > 0 {
+    .module-#{$num} {
+        content: "#{$num}";
+    }
+
+    $num: $num - 1;
+}
+
+
+//https://gist.github.com/blackfalcon/10158650
+$icons: success warning purchase;
+@each $icon in $icons {
+  .icon-#{$icon} {
+    background-image: url(/images/icons/#{$icon}.png);
+  }
+}
+
+
+// Method of using multiple objects in an array for >Sass 3.3 and libsass
+/* ----------------------------------- */
+$icon-charastics: (twitter, '\e001', blue) (dribble, '\e002', orange) (github, '\e003', black);
+@each $icon in $icon-charastics {
+  .#{nth($icon, 1)}-icon {
+    color: nth($icon, 3);
+    &:after {
+      content: '#{nth($icon, 2)}';
+    }
+  }
+}
+
+
+// New 3.3 @each loop that allows for multiple objects in the array
+/* ----------------------------------- */
+$icon-charastics: (twitter, '\e001', blue) (dribble, '\e002', orange) (github, '\e003', black);
+@each $icon, $pua, $color in $icon-charastics {
+  .#{$icon}-icon {
+    color: $color;
+    &:after {
+      content: '#{$pua}';
+    }
+  }
+}
+
+p {
+  @if 1 + 1 == 2 { border: 1px solid;  }
+  @if 5 < 3      { border: 2px dotted; }
+  @if null       { border: 3px double; }
+}
+  
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}	  
+//maps
+/* Define the Sassy Map called $icons */
+$icons: (
+  checkmark: a,
+  plus: b,
+  minus: c
+);
+ 
+/* For each key in the map, created an own class, name as name of a key, value as value which is assosciated with key  */
+@each $name, $value in $icons {
+  .icon--#{$name} {
+    content: $value;
+  }
+}
+
+//@media
+.sidebar {
+  width: 300px;
+  @media screen and (orientation: landscape) {
+    width: 500px;
+  }
+}

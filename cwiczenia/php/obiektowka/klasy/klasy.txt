@@ -1,0 +1,146 @@
+<?php
+class Klasa_Przykladowa {
+
+public $zmA;
+public static $zmB = "Zmienna statyczna";
+
+public function getA() {
+return $this->zmA;
+}
+
+public function getMethodA() {
+return $this->getA();
+}
+
+public function getSelfB() {
+return self::$zmB;
+}
+
+public function getStaticB() {
+return static::$zmB;
+}
+
+public function getStaticMethod() {
+return static::staticTest();
+}
+
+public static function staticTest() {
+return "test metody statycznej";
+}
+
+}
+
+$obiekt_klasy_przykladowej = new Klasa_Przykladowa;
+$obiekt_klasy_przykladowej->zmA = "test zmiennej";
+
+echo $obiekt_klasy_przykladowej->getA()."<br />";
+echo $obiekt_klasy_przykladowej->getMethodA()."<br />";
+
+echo $obiekt_klasy_przykladowej->getSelfB()."<br />";
+echo $obiekt_klasy_przykladowej->getStaticB()."<br />";
+echo $obiekt_klasy_przykladowej->getStaticMethod();
+
+
+
+
+<?php
+class First{
+
+public function __construct( $argument ){
+$this->wlasciwosc_klasy = $argument;
+}
+private $wlasciwosc_klasy;// będzie miala wartośc 2
+
+}
+class Second {
+
+private $zmienna1;//bedzie miala wartosc- string
+private $zmienna2;//bedzie miała wartosc 2
+public function __construct( $zmienna1,$argument ){ //2
+$this->zmienna1 = $zmienna1;
+$this->zmienna2 = new First($argument); //3
+}
+
+}
+
+$obiekt_Second = new Second(‚string’,2); //1
+
+?>
+
+
+<?php
+class DataType{
+
+private static $instancja = ‚jakis string’;
+
+/* private function __construct(){
+
+} */
+
+static public function instancja(){
+
+if(!isset(static::$instancja)){// jesli nie istnieje statyczna zmienna instance
+static::$instancja = new self();//to samo co – self::$instancja = new DataType;
+
+/* tworzenie obiektu statycznego klasy DataType obiekt nazywa sie instnacja powoduje tworzenie sie instanacji klasy DataType , dzieki temu instnacja klasy DataType nie bedzie tworzyc nowego obiektu */
+}
+
+return static::$instancja;//zwroc inatancje klasy request bedaca statyczna zmienna
+}
+}
+
+$obiekt = DataType::instancja();//instnacja klasy request bez tworzenia nowego obiektu tej klasy uzycie metody //staycznej instance tej klasy
+var_dump($obiekt);
+?>
+
+
+<?php
+
+class Podrzedna extends Nadrzedna {
+
+public function getZmiennaInteger() {
+//parent oznacza odwolanie do metody klasy macierzystej
+return "Wartość zmiennej to ".parent::getZmiennaValue();
+
+}
+// public function getStudentAlbumNameVar() {
+public function getZmiennaInteger_diffrent_way() {
+
+return "Wartość zmiennej (inny sposob dostepu do tej samej wartośći) to ".$this->wartosc;
+
+}
+
+}
+
+class Nadrzedna {
+
+public $wartosc;
+private $zmienna1;
+protected $zmienna2;
+
+public function getZmienna1() {
+return $this->zmienna1;
+}
+
+public function getZmienna2() {
+return $this->zmienna2;
+}
+
+public function getZmiennaValue() {
+return $this->wartosc;
+}
+
+public function nastaw_wartosc_zmiennej($liczba) {
+$this->zmienna2 = $liczba;
+}
+
+}
+
+$obiekt_klasy_Podrzedna = new Podrzedna;
+$obiekt_klasy_Podrzedna->wartosc = 12345;
+
+echo "Wartość odczytana z funkcji klasy rozszerzającej(podrzednej): ".$obiekt_klasy_Podrzedna->getZmiennaInteger()."<br />";
+echo "Wartość odczytana ze zmiennej klasy rozszerzającej(podrzednej): ".$obiekt_klasy_Podrzedna->getZmiennaInteger_diffrent_way();
+?>
+
+?>
